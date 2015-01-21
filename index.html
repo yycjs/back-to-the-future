@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-  <title>YYCjs Slides</title>
+  <title>YYCjs - Back To The Future</title>
   <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,900,700,500' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="theme/font-awesome.css">
   <style type="text/css">
@@ -405,6 +405,7 @@ body {
   font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
   font-weight: 100;
   color: #333333;
+  background: #FFFFFF;
 }
 
 h1 {
@@ -425,6 +426,14 @@ h3 {
 
 p {
   font-weight: 100;
+}
+
+h1, h2, h3, h4, h5, p, ul {
+  margin: 10px 0;
+}
+
+ul {
+  padding: 20px 0 20px 60px;
 }
 
 .progress-bar {
@@ -471,6 +480,16 @@ p {
   padding: 30px;
 }
 
+.title .slide-content {
+  display: table;
+}
+
+.title h1 {
+  display: table-cell;
+  vertical-align: middle;
+  z-index: 10;
+}
+
 .presenter img {
   height: 200px;
   width: 200px;
@@ -506,6 +525,10 @@ p {
   padding: 0 10px;
 }
 
+.sponsors h1 {
+  margin: 20px 0 40px 0;
+}
+
 .sponsors p {
   float: left;
   text-align: center;
@@ -517,6 +540,23 @@ p {
   width: 100%;
   max-width: 240px;
 }
+
+.image p > img {
+  max-width: 600px;
+  max-height: 400px;
+  margin: 20px auto;
+  display: table-cell;
+}
+
+img:only-child {
+  display: block;
+  margin: 0 auto;
+}
+
+pre {
+  font-size: 80% !important;
+}
+
   </style>
 </head>
 <body>
@@ -525,28 +565,15 @@ p {
   </div>
 
   <div class="slide" id="slide-1">
-    <section class="slide-content"><h1 id="yyc-js-presents-">YYC.js Presents:</h1>
-<h2 id="an-epic-slide-template">An Epic Slide Template</h2>
-<h3 id="that-totally-kicks-some-ass">That totally kicks some ass</h3>
-<h4 id="kind-of-like-chuck-norris">Kind of like Chuck Norris</h4>
-<h5 id="and-jackie-chan">And Jackie Chan</h5>
-<p>Maybe even Chris Rock</p>
-</section>
+    <section class="slide-content"><h1 style="position: absolute; top: 30%; color: white; text-align: center; margin: 0 auto; display: block;">YYCJS presents: Back To The Future</h1>
+
+<div style="width: 100%; background: url(img/back_to_the_future.jpg); height: 100%; background-size: contain; background-repeat: no-repeat; background-position: center;"></div></section>
   </div>
   <div class="slide hidden" id="slide-2">
     <section class="slide-content"><h1 id="brought-to-you-by">Brought to you by</h1>
 </section>
   </div>
   <div class="slide hidden  presenter" id="slide-3">
-    <section class="slide-content"><p><img src="http://gravatar.com/avatar/a14850281f19396480bdba4aab2d52ef?s=200" alt="David Luecke"></p>
-<h2 id="david-luecke">David Luecke</h2>
-<ul>
-<li><a href="https://github.com/daffl"><i class="fa fa-github"></i> daffl</a></li>
-<li><a href="http://twitter.com/daffl"><i class="fa fa-twitter"></i> @daffl</a></li>
-</ul>
-</section>
-  </div>
-  <div class="slide hidden  presenter" id="slide-4">
     <section class="slide-content"><p><img src="http://gravatar.com/avatar/23aba778a7daae99348aeb0728cf4aec?s=200" alt="Eric Kryski"></p>
 <h2 id="eric-kryski">Eric Kryski</h2>
 <ul>
@@ -556,7 +583,24 @@ p {
 </ul>
 </section>
   </div>
-  <div class="slide hidden  sponsors" id="slide-5">
+  <div class="slide hidden  presenter" id="slide-4">
+    <section class="slide-content"><p><img src="https://s.gravatar.com/avatar/de8cd250d9fe39b78f1c0f98b718670d?s=200" alt="Kevin Barabash"></p>
+<h2 id="kevin-barabash">Kevin Barabash</h2>
+<ul>
+<li><a href="https://github.com/kevinb7"><i class="fa fa-github"></i> kevinb7</a></li>
+</ul>
+</section>
+  </div>
+  <div class="slide hidden  presenter" id="slide-5">
+    <section class="slide-content"><p><img src="http://gravatar.com/avatar/a14850281f19396480bdba4aab2d52ef?s=200" alt="David Luecke"></p>
+<h2 id="david-luecke">David Luecke</h2>
+<ul>
+<li><a href="https://github.com/daffl"><i class="fa fa-github"></i> daffl</a></li>
+<li><a href="http://twitter.com/daffl"><i class="fa fa-twitter"></i> @daffl</a></li>
+</ul>
+</section>
+  </div>
+  <div class="slide hidden  sponsors" id="slide-6">
     <section class="slide-content"><h1 id="our-sponsors">Our Sponsors</h1>
 <p><img src="img/sponsors/assembly_logo.png" alt="Assembly"></p>
 <p><img src="img/sponsors/village_brewery_logo.png" alt="Village Brewery"></p>
@@ -564,19 +608,196 @@ p {
 <p><img src="img/sponsors/petrofeed_logo.png" alt="PetroFeed"></p>
 </section>
   </div>
-  <div class="slide hidden" id="slide-6">
-    <section class="slide-content"><h1 id="last-month">Last Month</h1>
+  <div class="slide hidden" id="slide-7">
+    <section class="slide-content"><h1 id="last-year">Last year</h1>
 <ul>
-<li>Something awesome</li>
-<li>More awesomeness</li>
+<li><a href="https://medium.com/@daffl/javascript-the-weird-parts-8ff3da55798e">JavaScript - The weird parts</a></li>
+<li><a href="http://yycjs.com/jquery-202-and-web-components/#slide1">jQuery 202 and web components</a></li>
+<li><a href="http://yycjs.com/nodejs-like-a-boss/">NodeJS like a boss</a></li>
+<li><a href="http://yycjs.com/js-workflow/">Optimize your JS workflows</a></li>
+<li><a href="http://yycjs.com/use-a-framework/">Use a framework?</a></li>
+<li><a href="https://github.com/yycjs/js-all-the-tests">JavaScript all the tests</a></li>
+<li><a href="http://www.meetup.com/yyc-js/events/209289532/">Intro to FRP &amp; Scaling NodeJS</a></li>
+<li><a href="http://www.meetup.com/yyc-js/events/217284622/">Intro to Ember and Appcelerator</a></li>
 </ul>
 </section>
   </div>
-  <div class="slide hidden" id="slide-7">
-    <section class="slide-content"><h1 id="next-month">Next Month</h1>
+  <div class="slide hidden" id="slide-8">
+    <section class="slide-content"><h1 id="this-year">This year</h1>
 <ul>
-<li>Something awesome</li>
-<li>More awesomeness</li>
+<li>YYCJS developer survey (<a href="https://docs.google.com/a/neyeon.com/forms/d/1H6voK4NOBdV1Q-0HcWPPfAGHWZYHBJGhthcO0bFabI4/viewanalytics">2014</a>, <a href="https://docs.google.com/a/neyeon.com/forms/d/1ySTgv1zF3oyQ2BOZS1wckPezO4ZQfeMzxJtGSy_Ic_o/viewanalytics">2015</a>)</li>
+<li>Similar general curriculum</li>
+<li>We are going to be putting together swag packages</li>
+<li>Job board</li>
+<li>Special events<ul>
+<li>January 31st - <a href="http://www.thehtml500.com/cities/calgary">The HTML500 is coming to Calgary</a></li>
+<li>February - Beyond HTML500</li>
+<li>April - Full day workshop (topic TBD)</li>
+<li>June - Development for non developers</li>
+<li>Ideas?</li>
+</ul>
+</li>
+</ul>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-9">
+    <section class="slide-content"><h1 id="artificial-intelligence">Artificial Intelligence</h1>
+<p><img alt="Robots with Brains" src="img/brain_robot.jpg" style="float: left; width: 500px;"></p>
+<blockquote>
+<p> &quot;the science and engineering of making intelligent machines&quot;</p>
+</blockquote>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-10">
+    <section class="slide-content"><h1 id="what-s-out-there-">What&#39;s out there?</h1>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-11">
+    <section class="slide-content"><div style="width: 100%; background: url(img/machine-learning.jpg); height: 100%; background-size: contain; background-repeat: no-repeat; background-position: center;"></div></section>
+  </div>
+  <div class="slide hidden" id="slide-12">
+    <section class="slide-content"><div style="width: 100%; background: url(img/jibo.png); height: 100%; background-size: contain; background-repeat: no-repeat; background-position: center;"></div></section>
+  </div>
+  <div class="slide hidden" id="slide-13">
+    <section class="slide-content"><h2 id="-jibo-http-www-myjibo-com-the-world-s-first-family-robot"><a href="http://www.myjibo.com/">JIBO</a> - The world&#39;s first family robot</h2>
+<p><img alt="Jibo" src="img/jibo_2.jpg" style="float: left; width: 40%;"></p>
+<ul>
+<li>Developed by Cynthia Lynn Breazeal, director of the &quot;Personal Robot Group&quot; at MIT</li>
+<li>Top 5 funded campaign on Indigogo</li>
+<li>Combines research in machine-human interaction with technologies like voice- and face recognition, spoken language and behaviour driven machine learning</li>
+</ul>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-14">
+    <section class="slide-content"><div style="width: 100%; background: url(img/google-self-driving.jpg); height: 100%; background-size: contain; background-repeat: no-repeat; background-position: center;"></div></section>
+  </div>
+  <div class="slide hidden" id="slide-15">
+    <section class="slide-content"><h2 id="google-translate-android-app">Google Translate Android app</h2>
+<p><img src="img/google-image-translate.gif" alt="Google image translate"></p>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-16">
+    <section class="slide-content"><h2 id="-skype-translator-http-www-skype-com-en-translator-preview-"><a href="http://www.skype.com/en/translator-preview/">Skype translator</a></h2>
+<iframe style="width: 80%; height: 70%; margin: 0 auto; display: block;" src="//www.youtube.com/embed/YvUk4EBV2FI" frameborder="0" allowfullscreen></iframe></section>
+  </div>
+  <div class="slide hidden" id="slide-17">
+    <section class="slide-content"><div style="width: 100%; background: url(img/ibm_watson.png); height: 100%; background-size: contain; background-repeat: no-repeat; background-position: center;"></div></section>
+  </div>
+  <div class="slide hidden" id="slide-18">
+    <section class="slide-content"><h2 id="-ibm-watson-http-www-ibm-com-smarterplanet-us-en-ibmwatson-"><a href="http://www.ibm.com/smarterplanet/us/en/ibmwatson/">IBM Watson</a></h2>
+<p>Watson is an artificially intelligent computer system capable of answering questions posed in natural language.</p>
+<ul>
+<li>Beat Jeopardy! champions in February 2010</li>
+<li>Now supports physicians in patient treatment</li>
+<li>January 9th 2014 announcement of Watson cloud-delivered services:<ul>
+<li>Watson Discovery Advisor</li>
+<li>Watson Analytics</li>
+<li>Watson Explore</li>
+</ul>
+</li>
+</ul>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-19">
+    <section class="slide-content"><div style="width: 100%; background: url(img/top500.png); height: 100%; background-size: contain; background-repeat: no-repeat; background-position: center;"></div></section>
+  </div>
+  <div class="slide hidden" id="slide-20">
+    <section class="slide-content"><h2 id="-the-human-brain-http-www-chromeexperiments-com-detail-artificial-neural-network-"><a href="http://www.chromeexperiments.com/detail/artificial-neural-network/">The human brain</a></h2>
+<blockquote>
+<p>100 billion neurons X 200 firings per second X 1000 connections per firing = 20 million billion calculations per second = 20 petaFLOPS</p>
+</blockquote>
+<p><img src="img/brain_screenshot.png" alt="The human brain" style="width: 50%;"></p>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-21">
+    <section class="slide-content"><h2 id="artificial-neural-networks">Artificial Neural Networks</h2>
+<blockquote>
+<p>In machine learning, artificial neural networks (ANNs) are a family of statistical learning algorithms inspired by biological neural networks (the central nervous systems of animals, in particular the brain).</p>
+<p>ANNs are generally presented as systems of interconnected &quot;neurons&quot; which can compute values from inputs, and are capable of machine learning as well as pattern recognition thanks to their adaptive nature.</p>
+</blockquote>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-22">
+    <section class="slide-content"><h2 id="data-processing">Data processing</h2>
+<ul>
+<li>Any machine learning systems accuracy depends on its input data.</li>
+<li>Input data (state vector) might need to be pre-processed to get the best results.</li>
+</ul>
+<p><img src="img/edge_detection.jpg" alt="Sobel edge detection"></p>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-23">
+    <section class="slide-content"><h2 id="javascript-neural-networks">JavaScript Neural Networks</h2>
+<ul>
+<li><a href="https://github.com/harthur/brain">BrainJS</a> - Neural networks in JavaScript</li>
+<li><a href="http://cs.stanford.edu/people/karpathy/convnetjs/">ConvNetJS</a> - Deep learning in your browser</li>
+<li><a href="http://synaptic.juancazala.com/">SynapticJS</a> - An architecture-free neural network library for node.js and the browser</li>
+</ul>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-24">
+    <section class="slide-content"><h2 id="brainjs">BrainJS</h2>
+<blockquote>
+<p>Neural networks in JavaScript</p>
+</blockquote>
+<pre><code class="lang-javascript"><span class="comment">// Color contrast training</span>
+<span class="keyword">var</span> net = <span class="keyword">new</span> brain.NeuralNetwork();
+
+net.train([{
+  input: { r: <span class="number">0</span>, g: <span class="number">0</span>, b: <span class="number">0</span> },
+  output: { white: <span class="number">1</span> }
+}, {
+  input: { r: <span class="number">1</span>, g: <span class="number">1</span>, b: <span class="number">1</span> },
+  output: { black: <span class="number">1</span> }
+}]);
+
+<span class="keyword">var</span> output = net.run({
+  r: <span class="number">0.2</span>,
+  g: <span class="number">0.2</span>,
+  b: <span class="number">0.2</span>
+});
+
+<span class="comment">// -&gt; { white: 0.81, black: 0.18 }</span></code></pre>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-25">
+    <section class="slide-content"><h2 id="touch-gestures">Touch gestures</h2>
+<p>Complex touch gestures are hard to implement imperatively.</p>
+<p>Let&#39;s see if we can train BrainJS to recognize them.</p>
+<p><img src="img/demo-1.png" style="width: 300px;" alt="Chappi Demo 1" style="float: left;">
+<img src="img/demo-2.png" style="width: 300px;" alt="Chappi Demo 2" style="float: left;"></p>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-26">
+    <section class="slide-content"><h2 id="state-vector">State vector</h2>
+<p><img src="img/demo-1.png" style="width: 300px; margin: 0; float: right;" alt="Chappi Demo 1"></p>
+<ul>
+<li>Retrieve network training data from server</li>
+<li>Normalize each <code>touchmove</code> or <code>mousemove</code> event X/Y into a number between 0 and 1 (divide by canvas width and height)</li>
+<li>Put all points into one big array<ul>
+<li>If less than 100 data points, fill with 0s</li>
+<li>If more than 100 data points, cut off at 100</li>
+</ul>
+</li>
+<li>Let network make a prediction</li>
+<li>Record the training data on the server</li>
+<li>Re-train the neural network</li>
+</ul>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-27">
+    <section class="slide-content"><h2 id="references">References</h2>
+<p>Online:</p>
+<ul>
+<li><a href="http://futureoflife.org/">Future Of Life Institue</a></li>
+<li><a href="http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-034-artificial-intelligence-fall-2010/">MIT Open Courseware - Artificial Intelligence</a></li>
+<li>Jeremy Howard - <a href="http://www.ted.com/talks/jeremy_howard_the_wonderful_and_terrifying_implications_of_computers_that_can_learn">The wonderful and terrifying implications of computers that can learn</a> (TED)</li>
+</ul>
+<p>Books:</p>
+<ul>
+<li>Charles Stross - <a href="http://www.antipope.org/charlie/blog-static/fiction/accelerando/accelerando-intro.html">Accelerando</a></li>
+<li>Vernor Vinge - <a href="http://www.amazon.ca/s/ref=nb_sb_noss_2?url=search-alias%3Daps&amp;field-keywords=zones+of+thought&amp;rh=i%3Aaps%2Ck%3Azones+of+thought">Zones of thought series</a></li>
+<li>Louis Del Monte - <a href="http://www.amazon.ca/Artificial-Intelligence-Revolution-Serve-Replace-ebook/dp/B00K1PNIR6/ref=sr_1_1?ie=UTF8&amp;qid=1421795864&amp;sr=8-1&amp;keywords=the+artificial+intelligence+revolution">The Artificial Intelligence Revolution</a></li>
 </ul>
 </section>
   </div>

@@ -89,7 +89,7 @@ ul {
 }
 
 .title h1 {
-  display: table-cell; 
+  display: table-cell;
   vertical-align: middle;
   z-index: 10;
 }
@@ -150,4 +150,13 @@ ul {
   max-height: 400px;
   margin: 20px auto;
   display: table-cell;
+}
+
+img:only-child {
+  display: block;
+  margin: 0 auto;
+}
+
+pre {
+  font-size: 80% !important;
 }
